@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Delete All Chats",
+  "version": "1.0",
+  "description": "Delete all active chats in bard",
+  "content_scripts": [
+    {
+      "matches": ["*://*.bard.google.com/*"],
+      "js": ["caballo.js"]
+    }
+  ]
+}
