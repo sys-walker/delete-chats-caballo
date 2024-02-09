@@ -82,7 +82,15 @@ async function main() {
   
 
   newButton.addEventListener("click", (e) => {
-    caballo();
+    console.log("clicked: ",e);
+    if (confirm('Are you sure you want to delete all chats?')) {
+      console.log('Started deletion');
+      caballo();
+    } else {
+      // Do nothing!
+      console.log('No chats were deleted');
+    }
+    
   });
   //4. Append the button to the desired location:
   doc.appendChild(newButton);
