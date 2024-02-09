@@ -3,10 +3,7 @@ console.log("The Caballo extension is up and running");
 async function optionChatButton() {
   const button = await new Promise((resolve) => {
     setTimeout(() => {
-      let optionsChat = document.querySelector(
-        "#conversations-list-0 > div:nth-child(2) > button > span.mat-mdc-focus-indicator"
-      );
-
+      let optionsChat= document.querySelector("#conversations-list-0 > div:nth-child(2) > button")
       console.log("optionChat:", optionsChat);
       resolve(optionsChat);
     }, 150);
@@ -34,7 +31,7 @@ async function deleteChat(buttonChat) {
       )[0];
       console.log("deleteDialog:", deleteDialog);
       let buttons = deleteDialog.getElementsByTagName("button");
-      console.log("confirmDelete:", buttons[2]);
+      console.log("confirmDelete:", buttons[1]);
       resolve(buttons[1]);
     }, 150);
   });
@@ -57,10 +54,12 @@ async function caballo() {
 async function main() {
   const doc = await new Promise((resolve) => {
     setTimeout(() => {
-      let d = document.querySelector("#app-root > side-navigation > mat-sidenav-container > mat-sidenav > div > div > div > div.new-conversation-container.ng-star-inserted")
+      let d = document.querySelector("div.side-nav-button-container")
+      console.log(d);
       resolve(d);
-    }, 1000);
+    }, 1500);
   });
+  
 
   //1. Create the button element:
   const newButton = document.createElement("button");

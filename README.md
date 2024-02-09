@@ -1,6 +1,6 @@
-# Delete All Bard Chats (Caballo)
+# Delete All Gemini Chats (Caballo)
 
-This is a code repository for a browser extension that allows us to delete all active chats in Bard. It removes all chats with a single click.
+This is a code repository for a browser extension that allows us to delete all active chats in Gemini. It removes all chats with a single click.
 
 Caballo was the original name of the original script that was created as a meme and ended up as an extension.
 
@@ -46,7 +46,7 @@ Navigate to the local folder containing the extension’s code and click OK
 
 ## Final result
 
-Now,visit the bard.google.com site and you will see a `Delete All Chats` button near the button `new chat`
+Now,visit the gemini.google.com site and you will see a `Delete All Chats` button near the button `new chat`
 
 ![Demo of Caballo Extension](images/demo.png)
 

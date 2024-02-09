@@ -2,10 +2,13 @@
   "manifest_version": 3,
   "name": "Delete All Chats",
   "version": "1.0",
-  "description": "Delete all active chats in bard",
+  "description": "Delete all active chats in Gemini",
+  "permissions": [
+    "activeTab"
+  ],
   "content_scripts": [
     {
-      "matches": ["*://*.bard.google.com/*"],
+      "matches": ["*://*.gemini.google.com/*"],
       "js": ["caballo.js"]
     }
   ]
