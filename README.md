@@ -48,6 +48,6 @@ Navigate to the local folder containing the extension’s code and click OK
 
 Now,visit the gemini.google.com site and you will see a `Delete All Chats` button near the button `new chat`
 
-![Demo of Caballo Extension](images/demo.png)
+![Demo of Caballo Extension](images/demo-gemini.png)
 
 You can see the `Delete All Chats` easily which on click will delete all active chats
