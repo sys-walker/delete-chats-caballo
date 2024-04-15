@@ -3,7 +3,9 @@ console.log("The Caballo extension is up and running");
 async function optionChatButton() {
   const button = await new Promise((resolve) => {
     setTimeout(() => {
-      let optionsChat= document.querySelector("#conversations-list-0 > div:nth-child(2) > button")
+      let optionsChat = document.querySelector(
+        "#conversations-list-0 > div:nth-child(2) > div.conversation-actions-container.ng-star-inserted > button > mat-icon"
+      );
       console.log("optionChat:", optionsChat);
       resolve(optionsChat);
     }, 150);
